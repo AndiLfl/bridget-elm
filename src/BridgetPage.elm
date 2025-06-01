@@ -176,8 +176,8 @@ update msg model =
                     case model.pieceType of
                         LShape -> (Rotations.lBlockRotations, 24) -- Use 12 L block rotations
                         TShape -> (Rotations.tBlockRotations, 12)
-                        ZShape -> (Rotations.zBlockRotations, 24)
-                        OShape -> (Rotations.oBlockRotations, 8)
+                        ZShape -> (Rotations.zBlockRotations, 12)
+                        OShape -> (Rotations.oBlockRotations, 2)
                 newIndex =
                     let
                         idx = model.pieceRotIndex + dir
